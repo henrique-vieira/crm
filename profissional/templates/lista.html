@@ -1,0 +1,71 @@
+{% extends "website/_layouts/base.html" %}
+
+{% block title %}Lista de Profissionais{% endblock %}
+
+{% load primeira_letra %}
+
+{% block conteudo %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Lista de Profissional</h5>
+
+          {% if profissionais|length > 0 %}
+            <p class="card-text">
+              Aqui está a lista de <code>Profissionais</code> cadastrados.
+            </p>
+
+            <table class="table">
+              <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Tempo de Serviço</th>
+                <th scope="col">Remuneracao</th>
+                <th scope="col">Especialidade</th>
+                <th scope="col" class="text-center">Ações</th>
+              </tr>
+              </thead>
+              <tbody>
+              {% for profissional in profissionais %}
+                <tr>
+                  <th scope="row">{{ profissional.nome|primeira_letra }}</th>
+                  <td>{{ profissional.nome }}</td>
+                  <td>{{ profissional.sobrenome }}</td>
+                  <td>{{ profissional.tempo_de_servico }}</td>
+                  <td>{{ profissional.remuneracao }}</td>
+                  <td>{{ profissional.especialidade }}</td>
+                  <td class="text-center">
+                    <a href="{% url 'website:atualiza_profissional' pk=profissional.id %}"
+                       class="btn btn-primary">
+                      Atualizar
+                    </a>
+                    <a href="{% url 'website:deleta_profissional' pk=profissional.id %}"
+                      class="btn btn-danger">
+                        Excluir
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        {% else %}
+          <div class="text-center mt-5 mb-5 jumbotron">
+            <h5>Nenhum <code>Profissional</code> cadastrado ainda.</h5>
+          </div>
+        {% endif %}
+          <hr />
+          <div class="text-right">
+            <a href="{% url 'website:cadastra_profissional' %}" class="btn btn-primary">
+              Cadastrar Profissional
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

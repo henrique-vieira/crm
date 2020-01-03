@@ -1,0 +1,82 @@
+{% extends "website/_layouts/base.html" %}
+
+{% load widget_tweaks %}
+
+{% block title %}Cadastro de Pacientes{% endblock %}
+
+{% block conteudo %}
+<form id="formid" action='' method="POST" novalidate enctype="multipart/form-data">
+  <div class="overview_form_block row marl justify-content-center">
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title text-center">
+            {% if objetos %}EDITAR{% else %}CRIAR{% endif %} CONTA
+          </div>
+          <div class="row marl">
+            <div class="col-md-4">
+              <div class="filter_col col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="required">Nome{% if form.nome.field.required %}<span
+                      class="error_marker" style="color:red">*</span>{% endif %}</label>
+                  {% render_field form.nome class+="form-control" %}
+                </div>
+              </div>
+              <div class="filter_col col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Sobrenome{% if form.sobrenome.field.required %}<span
+                      class="error">*</span>{% endif %}</label>
+                  {% render_field form.sobrenome class+="form-control" %}
+                  <span class="error" id="id__website">{{ account_form.website.errors }}</span>
+                </div>
+              </div>
+              <div class="filter_col col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="required">Sexo{% if form.sexo.field.required %}<span
+                      class="error_marker" style="color:red">*</span>{% endif %}</label>
+                  {% render_field form.sexo class+="form-control" %}
+
+                </div>
+              </div>
+              <div class="filter_col col-md-12">
+                <div class="form-group ">
+                  <label for="exampleInputEmail1" class="required">Data Nascimento{% if form.data_nascimento.field.required %}<span class="error_marker"
+                      style="color:red">*</span>{% endif %}</label>
+                  {% render_field form.data_nascimento class+="form-control" %}
+                </div>
+              </div>
+              <div class="filter_col col-md-12">
+                <div class="form-group ">
+                  <label for="exampleInputEmail1" class="required">Acompanhante{% if form.acompanhante.field.required %}<span
+                      class="error_marker" style="color:red">*</span>{% endif %}</label>
+                  {% render_field form.data_nascimento class+="form-control" %}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="filter_col billing_block col-md-12" style="padding: 0px;">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Endereço
+                    {% if form.endereco.field.required %}<span class="error_marker"
+                      style="color:red">*</span>{% endif %}</label>
+                  {% render_field form.endereco class+="form-control" %}
+                </div>
+              </div>
+            </div>
+           <div class="col-md-12">
+              <div class="row marl buttons_row form_btn_row text-center">
+                <button class="btn btn-default save" type="submit" id="call_save">Salvar</button>
+                <a href="{% url 'website:lista_pacientes' %}" class="btn btn-default clear" id="create_user_cancel">Cancelar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- overview ends here -->
+</form>
+{% endblock %}
+
+
+

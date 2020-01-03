@@ -1,0 +1,76 @@
+<!-- templates/registration/login.html -->
+<!DOCTYPE html>
+<html>
+    {% load static tempo_atual %}
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Title -->
+        <title>{% block title %}Sistema Nervemed{% endblock %}</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'website/img/favicon.png' %}" type="image/png">
+
+        <!-- Arquivos CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'website/css/master.css' %}">
+
+        {% block styles %}{% endblock %}
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{% url 'website:login' %}">
+              <img src="{% static 'website/img/favicon.png' %}" height="45px">
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <!-- Conteúdo do site -->
+        {% block conteudo %}
+		<div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-3" style="margin:0 auto;"></div>
+                <div class="col-md-4" style="margin:0 auto;">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <hr/>
+                        <p class="card-text">
+                          Por favor, faça o <code>Login</code> no sistema.
+                        </p>
+                          <form method="post">
+                            {% csrf_token %}
+
+                              {{ form.as_p }}
+                              <button class="btn btn-primary" type="submit">Login</button>
+
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+              <div class="col-md-3" style="margin:0 auto;"></div>
+            </div>
+          </div>
+        </div>
+		{% endblock %}
+
+        <!-- Scripts .js -->
+        <script src="{% static 'website/js/jquery.min.js' %}"></script>
+        <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+
+        {% block scripts %}{% endblock %}
+
+        <script src="{% static 'website/js/scripts.js' %}"></script>
+    </body>
+</html>
