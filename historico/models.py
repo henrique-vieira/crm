@@ -214,7 +214,7 @@ class Historico(models.Model):
         return "{}".format(self.paciente)
 
     def image_iprf(self):
-       return mark_safe('<img src="/media/%s" width="150" height="150" />' % (self.img_iprf))
+       return mark_safe('<img src="/media/%s" width="250" height="250" />' % (self.img_iprf))
 
        image_tag.short_description = 'Image'
 

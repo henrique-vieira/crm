@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82a8db87-9beb-45f4-af5f-2474cfd41609" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo/demo/helloworld/flows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historico/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/historico/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historico/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/historico/models.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V6lKOSHdWBmk5hYOGmooCoXWpN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simplemooc" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\website\static\website\css" />
+      <recent name="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\website\templates\admin" />
+      <recent name="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\config\tamplates\admin" />
+      <recent name="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\tamplates\admin" />
+      <recent name="C:\Users\carloshb\PycharmProjects\HelloWorldDjango-master\website\templates\website" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82a8db87-9beb-45f4-af5f-2474cfd41609" name="Default Changelist" comment="" />
+      <created>1576154770488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576154770488</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add Novos models historico e atendimento">
+      <created>1577737417288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577737417288</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Novos models historico e atendimento">
+      <created>1577737603813</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577737603813</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implementação Upload e exibição de imagens">
+      <created>1577989675207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577989675207</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementação Upload e exibição de imagens">
+      <created>1577989973213</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577989973213</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementação Upload e exibição de imagens">
+      <created>1578068299689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578068299689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Novos models historico e atendimento" />
+    <MESSAGE value="Implementação Upload e exibição de imagens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação Upload e exibição de imagens" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576582571055">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576582571055" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1578068281570">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578068281570" />
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1578068235532">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1578068235532" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1577973458016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577973458016" />
+    <state x="184" y="5" key="SettingsEditor" timestamp="1577974745265">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1577974745265" />
+    <state x="380" y="101" width="606" height="526" key="find.popup" timestamp="1577736102008">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="101" width="606" height="526" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1577736102008" />
+  </component>
+</project>
